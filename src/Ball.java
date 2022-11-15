@@ -7,4 +7,17 @@ public class Ball {
     Ball(){
 
     }
+    public void setXDirection (int randomXDirection){
+
+    }
+    public void setYDirection (int randomYDirectrion){
+
+    }
+    public void move (){
+
+    }
+    public void draw (Graphics g){
+
+    }
+
 }
