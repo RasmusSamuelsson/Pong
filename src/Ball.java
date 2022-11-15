@@ -7,7 +7,7 @@ public class Ball extends Rectangle{
     Random random;
     int xVelocity;
     int yVelocity;
-    int initialSpeed = 5;
+    int initialSpeed = 3;
 
 
     Ball(int x, int y, int width, int heigt){
