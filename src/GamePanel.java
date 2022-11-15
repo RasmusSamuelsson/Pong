@@ -72,6 +72,18 @@ public class GamePanel extends JPanel implements Runnable{
             ball.setYDirection(-ball.yVelocity);
         }
 
+        //Bounces ball of paddles
+        if (ball.intersects(paddle1)) {
+            ball.xVelocity = Math.abs(ball.xVelocity);
+            ball.xVelocity++; //Optional for more speed
+            if (ball.yVelocity>0)
+                ball.yVelocity++;
+            else
+                ball.yVelocity--;
+            ball.setXDirection(ball.xVelocity);
+            ball.setYDirection(ball.yVelocity);
+        }
+
         //Stops paddles at window edges
         if (paddle1.y <= 0)
             paddle1.y = 0;
